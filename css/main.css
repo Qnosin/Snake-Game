@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.board {
+  width: 1000px;
+  height: 620px;
+  border: 1px solid #000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  z-index: 0;
+}
+
+.board .player {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #000;
+  z-index: 1;
+}
+
+.place-1 {
+  width: 100%;
+  background-color: #008013;
+  position: relative;
+}
+
+.place-1 .point {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+}
+
+.place-2 {
+  width: 100%;
+  background-color: #008013;
+  position: relative;
+}
+
+.place-2 .point {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+}
+
+.place-3 {
+  width: 100%;
+  background-color: #008013;
+  position: relative;
+}
+
+.place-3 .point {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+}
+
+.place-4 {
+  width: 100%;
+  background-color: #008013;
+  position: relative;
+}
+
+.place-4 .point {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+}
+
+.place-5 {
+  width: 100%;
+  background-color: #008013;
+  position: relative;
+}
+
+.place-5 .point {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+}
+
+.place-6 {
+  width: 100%;
+  background-color: #008013;
+  position: relative;
+}
+
+.place-6 .point {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=main.css.map */

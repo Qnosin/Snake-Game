@@ -1,0 +1,57 @@
+$list1: (place-1, place-2, place-3, place-4, place-5, place-6);
+$black: #000;
+@mixin d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin d-grid($col) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include d-flex();
+    height: 100vh;
+}
+
+.board {
+    width: 1000px;
+    height: 620px;
+    border: 1px solid $black;
+    @include d-grid(2);
+    position: relative;
+    z-index: 0;
+    .player {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: $black;
+        z-index: 1;
+    }
+}
+
+@each $d in $list1 {
+    .#{$d} {
+        width: 100%;
+        background-color: #008013;
+        position: relative;
+        .point {
+            width: 30px;
+            height: 30px;
+            background-color: $black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 20px;
+        }
+    }
+}
