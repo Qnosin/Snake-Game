@@ -1,4 +1,3 @@
-$list1: (place-1, place-2, place-3, place-4, place-5, place-6);
 $black: #000;
 @mixin d-flex {
     display: flex;
@@ -20,15 +19,17 @@ $black: #000;
 body {
     @include d-flex();
     height: 100vh;
+    background-color: $black;
+    overflow: hidden;
 }
 
 .board {
     width: 1000px;
     height: 620px;
     border: 1px solid $black;
-    @include d-grid(2);
     position: relative;
     z-index: 0;
+    background-color: #008013;
     .player {
         position: absolute;
         width: 40px;
@@ -36,22 +37,25 @@ body {
         border-radius: 10px;
         background-color: $black;
         z-index: 1;
+        background: url('/img/d1773bff-e36c-4578-b761-68746b1ea592.svg');
+        background-position: center;
+        background-size: cover;
+    }
+    .moving {
+        position: absolute;
+    }
+    .addon {
+        @extend .player;
+        position: absolute;
+        background-color: black;
+        background-image: none;
     }
 }
 
-@each $d in $list1 {
-    .#{$d} {
-        width: 100%;
-        background-color: #008013;
-        position: relative;
-        .point {
-            width: 30px;
-            height: 30px;
-            background-color: $black;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            border-radius: 20px;
-        }
-    }
+.point {
+    width: 30px;
+    height: 30px;
+    background-color: $black;
+    position: absolute;
+    border-radius: 20px;
 }
