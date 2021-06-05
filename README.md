@@ -11,4 +11,4 @@ now everything discluding better control animation for snake and mobile vesrion,
 #when i can see a project?
 <del>when it will be minimum in alpha,then i will send
 files to github-pages</del>
-Project is now hosted now on github-Pages
+#Project is now hosted now on github-Pages
