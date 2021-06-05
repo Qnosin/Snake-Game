@@ -1,13 +1,14 @@
 # Snake-Game
 This project is not complete
-at now only controls working
+now everything discluding better control animation for snake and mobile vesrion, works
 
 #My goals
-- snake needs to be bigger when eat point
-- adding collision detection
-- find a new way to implement controls
+- <del> snake needs to be bigger when eat point </del> Solved
+- <del> adding collision detection </del> Solved
+- <del> find a new way to implement controls </del> Solved
 - maybe add mobile but it will be in other repositories
 
 #when i can see a project?
-when it will be minimum in alpha,then i will send
-files to github-pages
+<del>when it will be minimum in alpha,then i will send
+files to github-pages</del>
+Project is now hosted now on github-Pages
