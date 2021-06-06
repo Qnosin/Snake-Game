@@ -36,7 +36,7 @@ body {
   border-radius: 10px;
   background-color: #000;
   z-index: 1;
-  background: url("/img/d1773bff-e36c-4578-b761-68746b1ea592.svg");
+  background: url("./img/d1773bff-e36c-4578-b761-68746b1ea592.svg");
   background-position: center;
   background-size: cover;
 }
